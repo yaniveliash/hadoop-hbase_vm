@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
     config.vm.box = "centos/7"
-    config.vm.box_url = "file:///c:/Users/Yaniv/Downloads/CentOS-7-x86_64-Vagrant-1801_02.VirtualBox.box"
+    #config.vm.box_url = "file:///c:/Users/Yaniv/Downloads/CentOS-7-x86_64-Vagrant-1801_02.VirtualBox.box"
     config.vm.network "public_network"
     config.vm.provider "virtualbox" do |vb|
     vb.name = "hadoop_hbase"
