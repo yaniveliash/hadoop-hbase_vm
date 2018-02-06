@@ -8,13 +8,19 @@ For an offline deployment you will need to provide the following 3 files and amm
 - [x] hbase-1.2.6-bin.tar.gz
 - [x] hadoop-2.8.3.tar.gz
 
-# System Resources
-Make sure that you've enough resources to allocate
+# System Resources and requirements
+- [x] Vagrant 2+
+- [x] Virtualbox 5+ (with support for 64bit)
+
+
+Make sure that you've enough resources to allocate, Otherwise, you will need to ammend the vagrantfile.
 - [x] 4 Cores
 - [x] 4G Ram
 
-Otherwise, you will need to ammend the vagrantfile.
-
+# Control
+In a command line
+deploy: `vagrant up`</br>
+destroy: `vagrant destroy`
 # Access
 Once the machine is up and running and got a DHCP IP allocation,</br>
 type `vagrant ssh` and inside the machine get your machine's IP address with `ip a`</br>
