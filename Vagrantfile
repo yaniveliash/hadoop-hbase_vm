@@ -22,8 +22,8 @@ Vagrant.configure(2) do |config|
       ]
 end
 #uncomment the below 2 lines if you provide a pre-downloaded tars of hadoop and hbase
-#config.vm.provision "file", source: "./#{HBASE_VERSION}", destination: "/home/vagrant/#{HBASE_VERSION}"
-#config.vm.provision "file", source: "./#{HADOOP_VERSION}", destination: "/home/vagrant/#{HADOOP_VERSION}"
+#config.vm.provision "file", source: "./hbase-#{HBASE_VERSION}-bin.tar.gz", destination: "/home/vagrant/hbase-#{HBASE_VERSION}-bin.tar.gz"
+#config.vm.provision "file", source: "./hadoop-#{HADOOP_VERSION}.tar.gz", destination: "/home/vagrant/hadoop-#{HADOOP_VERSION}.tar.gz
 config.vm.provision "file", source: "./core-site.xml", destination: "/home/vagrant/core-site.xml"
 config.vm.provision "file", source: "./hdfs-site.xml", destination: "/home/vagrant/hdfs-site.xml"
 config.vm.provision "file", source: "./mapred-site.xml", destination: "/home/vagrant/mapred-site.xml"
