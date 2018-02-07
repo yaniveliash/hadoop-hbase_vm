@@ -20,10 +20,11 @@ For an offline deployment you will need to provide the following 3 files and amm
 In a command line</br>
 deploy: `vagrant up`</br>
 destroy: `vagrant destroy`
-> During `vagrant up` you will be asked to bridge your ethernet card - it's usually number 1
+> During `vagrant up` you will be asked to choose ethernet card for network bridge - it's usually number 1</br>
+> The process won't continue unless you choose and confirm.
 # Access
-Once the machine is up and running and got a DHCP IP allocation,</br>
-type `vagrant ssh` and inside the machine get your machine's IP address with `ip a`</br>
+Once vagrant finish it thing, you will be able to see the mahcine's IP in the console output,</br>
+use that IP to access your machine.</br>
 </br>
 HBASE WebUI is available at port : 16010</br>
 Hadoop HDFS Health WebUI is available at port : 50070</br>
