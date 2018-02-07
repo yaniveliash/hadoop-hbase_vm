@@ -10,7 +10,7 @@ BOX_FILE = "CentOS-7-x86_64-Vagrant-1801_02.VirtualBox.box"
 Vagrant.configure(2) do |config|
     config.vm.box = "centos/7"
     #uncomment the below line if you are providing a pre-downloaded centos 7
-    #config.vm.box_url = "file://.#{BOX_FILE}/"
+    #config.vm.box_url = "file://#{BOX_FILE}/"
     config.vm.network "public_network"
     config.vm.provider "virtualbox" do |vb|
     vb.name = "hadoop_hbase"
